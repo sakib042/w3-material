@@ -1,0 +1,1044 @@
+/*
+Index of W3-App:
+    Home
+        +Footer
+            -social
+            -text
+
+
+*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 450px;
+    background-color: #202020;
+}
+
+
+/* ----------- Menu ------------ */
+
+
+/* 
+.fixed-nav-on-scroll {
+    background-color: #FFFFFF !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    -webkit-transition: z-index 0.5s;
+    -moz-transition: z-index 0.5s;
+    transition: z-index 0.5s;
+}
+
+.fixed-nav-on-scroll .nav-wrapper {
+    background-color: #FFFFFF;
+    border-color: transparent;
+    box-shadow: 2px 0 5px #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.fixed-nav-on-scroll .nav-wrapper .brand-logo,
+.nav-wrapper .header-text {
+    opacity: 0;
+    display: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fixed-nav-on-scroll .nav-wrapper .header-text {
+    opacity: 1;
+    display: block;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fixed-nav-on-scroll .nav-wrapper ul li a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.fixed-nav-on-scroll .nav-wrapper ul li a i {
+    font-size: 1.5em;
+} */
+
+
+/* .nav-wrapper {
+    background-color: transparent;
+    border-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+} */
+
+.nav-wrapper ul li {
+    position: relative;
+    background: #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+nav {
+    padding-top: 30px;
+    background: transparent;
+    padding-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.nav-wrapper ul li a i {
+    font-size: 1.5em;
+}
+
+.nav-wrapper ul li a::before {
+    background: deepskyblue;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right center 0;
+    transition: transform .6s cubic-bezier(0, .71, .41, 1) 0s;
+    width: 100%;
+}
+
+.nav-wrapper ul li:hover a::before {
+    transform: scaleX(1);
+    transform-origin: left center 0;
+}
+
+.nav-wrapper ul li.active a:hover {
+    background-color: #FFFFFF;
+    color: #202020 !important;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.nav-wrapper ul a:hover {
+    background-color: #FFFFFF;
+    color: deepskyblue !important;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+@media (max-width:767px) {
+    .nav-wrapper {
+        background-color: #FFFFFF;
+    }
+    .nav-wrapper .brand-logo {
+        opacity: 0;
+        display: none;
+    }
+    .nav-wrapper .header-text {
+        opacity: 1;
+        display: block;
+        color: #202020;
+    }
+}
+
+
+/* ----------- Header --------------- */
+
+header {
+    background-image: url("../images/a1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header .message {
+    color: #202020;
+    width: 70%;
+    height: 40vh;
+    margin-top: 30vh;
+    margin-left: 15%;
+    text-align: center;
+    background-color: #eee;
+    opacity: 0.8;
+    padding-top: 5vh;
+}
+
+header .message h1 span {
+    color: dodgerblue;
+    font-weight: bold;
+    text-shadow: 0 1px 5px #777;
+}
+
+header .message .main {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #202020;
+    width: 70%;
+    margin-left: 15%;
+}
+
+header .message .website,
+header .message .webapp,
+header .message .mobileapp,
+header .message .tseo {
+    display: none;
+    opacity: 0;
+    color: #202020;
+    margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+    header .message h1 {
+        font-size: 1em;
+    }
+    header .message .website,
+    header .message .webapp,
+    header .message .mobileapp,
+    header .message .tseo {
+        margin-top: 0;
+    }
+}
+
+header .more-arrow {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    max-width: 95%;
+    max-height: 95%;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    background-color: skyblue;
+    height: 70px;
+    width: 70px;
+    padding: 12px;
+    border-radius: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-animation: bounce 1s linear 1s infinite alternate;
+    -moz-animation: bounce 1s linear 1s infinite alternate;
+    animation: bounce 1s linear 1s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 88%;
+    }
+    50% {
+        top: 90%;
+    }
+    100% {
+        top: 92%;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 88%;
+    }
+    50% {
+        top: 90%;
+    }
+    100% {
+        top: 92%;
+    }
+}
+
+header .more-arrow:hover {
+    color: skyblue;
+    border-color: skyblue;
+    background-color: #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* ----------- About Us ------------- */
+
+.about-us {
+    background-color: #FFFFFF;
+    background-image: url("../images/shattered.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color: #202020;
+    padding-bottom: 50px;
+}
+
+.about-us .description {
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+.about-us i {
+    color: skyblue;
+}
+
+
+/* --------- Service ------------*/
+
+.service {
+    background-color: #FFFFFF;
+    color: #202020;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.service .s12 {
+    margin-top: 80px;
+}
+
+.service .service-section {
+    padding: 10px;
+    background-color: skyblue;
+    border: 2px solid transparent;
+    box-shadow: 1px 1px 10px #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.service .service-section:hover {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-color: deepskyblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section span {
+    position: absolute;
+    top: -60px;
+    left: 38%;
+    width: 75px;
+    height: 75px;
+    padding: 13px 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 100%;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px #000000;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section:hover span {
+    top: -65px;
+    border-color: deepskyblue;
+    box-shadow: none;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section span i {
+    color: skyblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section:hover span i {
+    color: deepskyblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service .service-section h3,
+.service .service-section p {
+    color: #202020;
+    text-align: center;
+}
+
+
+/* ----------- Pricing -------------- */
+
+.pricing {
+    background-image: url("../images/pricing.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.pricing .well {
+    color: #000000;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.pricing .well:hover {
+    background-color: lightblue;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* ----------- Our Team ------------- */
+
+.our-team {
+    background-color: #202020;
+    background-image: url("../images/a2.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    width: 100%;
+    padding-bottom: 50px;
+    height: auto;
+}
+
+.our-team .profile-image {
+    margin: 0 auto;
+}
+
+.our-team h4,
+.our-team p {
+    color: #202020;
+}
+
+.our-team h5.name {
+    color: #202020;
+}
+
+.our-team h5.designation {
+    color: skyblue;
+}
+
+.our-team .card-panel.profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.our-team .card-panel.profile .hover-description {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 97%;
+    text-align: center;
+    background-color: lightblue;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.our-team .card-panel.profile .hover-description h3 {
+    color: #FFFFFF
+}
+
+.our-team .card-panel.profile:hover .hover-description {
+    bottom: -5%;
+    height: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .card-panel:hover .hover-description a,
+.our-team .card-panel:hover .hover-description a:hover,
+.our-team .card-panel:hover .hover-description a:active,
+.our-team .card-panel:hover .hover-description a:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.our-team .card-panel .hover-description i.fa-facebook {
+    box-sizing: border-box;
+    opacity: 1;
+    border: 4px solid lightblue;
+    border-radius: 100%;
+    padding: 8px;
+    background-color: #3B5998;
+    height: 62px;
+    width: 62px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .card-panel .hover-description i.fa-twitter {
+    box-sizing: border-box;
+    opacity: 1;
+    border: 4px solid lightblue;
+    border-radius: 100%;
+    padding: 8px;
+    background-color: #55ACEE;
+    height: 62px;
+    width: 62px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .card-panel .hover-description i.fa-envelope {
+    box-sizing: border-box;
+    opacity: 1;
+    border: 4px solid lightblue;
+    border-radius: 100%;
+    padding: 12px 10px;
+    background-color: #28B446;
+    height: 62px;
+    width: 62px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.our-team .card-panel .hover-description i:hover {
+    border: 4px solid #FFFFFF;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* --------- Work Process ----------- */
+
+.process-section {
+    padding-bottom: 50px;
+    background-color: #202020;
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+}
+
+.process-section ul {
+    margin-top: 50px;
+    list-style-type: none;
+    padding-left: 0;
+    border: 1px solid white;
+}
+
+.process-section ul.left {
+    position: absolute;
+    right: 0;
+    float: right;
+    margin-top: 50px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.process-section ul.left li {
+    position: relative;
+    right: 0;
+    padding: 8px 0;
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    width: 90%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul.left li:hover {
+    color: #55ACEE;
+    border-color: #55ACEE;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul.left li i {
+    position: absolute;
+    right: 0;
+    margin-top: -10px;
+    padding: 10px;
+    border: 2px solid #393939;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul.right li {
+    padding: 8px 0;
+    list-style-type: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    width: 90%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul.right li:hover {
+    color: #55ACEE;
+    border-color: #55ACEE;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul.right li i {
+    position: absolute;
+    left: 0;
+    margin-top: -10px;
+    padding: 10px;
+    border: 2px solid #393939;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 20px;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.process-section ul li:hover i {
+    background: #55ACEE;
+    color: #fff;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+/* ----------- Contact Us ------------- */
+
+.contact-us {
+    background-color: #FFFFFF;
+    background-image: url("../images/squairy_light.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color: #202020;
+    padding-bottom: 50px;
+}
+
+.contact-us input {
+    padding: 31px;
+    font-size: 1.3em;
+}
+
+.contact-us .input-group-addon i.fa-map-marker {
+    font-size: 2.7em;
+}
+
+.contact-us .input-group-addon i.fa-tablet {
+    font-size: 2.5em;
+}
+
+.contact-us .input-group-addon i.fa-envelope {
+    font-size: 1.6em;
+}
+
+.contact-us .input-group-addon i.fa-globe {
+    font-size: 2em;
+}
+
+
+/* ----------- Footer --------------- */
+
+footer {
+    background-image: url("../images/dark_dotted.png");
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    z-index: -1;
+}
+
+footer p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+footer p img {
+    height: 45px;
+    width: 45px;
+}
+
+footer hr {
+    width: 50%;
+}
+
+
+/* ------- Helper --------- */
+
+.padding50 {
+    padding: 25px 0;
+    background-color: #202020;
+}
+
+.heading h2 span {
+    text-align: center;
+    box-shadow: 0 2px 15px #00bcd4;
+    height: 1px;
+    background-color: #00bcd4;
+    width: 50%;
+    transform: rotate(90deg);
+}
+
+
+/* #info {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #fcf8e3;
+    border: 1px solid #fbeed5;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    font-family: arial;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+#info .info-wrapper {
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+#info a {
+    color: #c09853;
+    text-decoration: none;
+}
+
+#info p {
+    margin: 5px 0 0 0;
+} */
+
+.portfolio-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #202020;
+    color: #FFFFFF;
+}
+
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+#filters li {
+    float: left;
+    width: 20%;
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#filters li:hover {
+    background-color: white;
+    color: #202020;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#filters li span {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#filters li:hover span {
+    color: #202020;
+}
+
+#filters li span.active {
+    background: skyblue;
+    color: #000;
+    border-radius: 10px;
+}
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 23%;
+    margin: 1%;
+    display: none;
+    float: left;
+    overflow: hidden;
+}
+
+.portfolio-wrapper {
+    overflow: hidden;
+    position: relative !important;
+    background: #666;
+    cursor: pointer;
+}
+
+.portfolio img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.portfolio .label-bg {
+    background: skyblue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.portfolio .label-text {
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    padding: 5px 8px;
+    font-size: 1.5em;
+}
+
+.portfolio .text-title {
+    padding-top: 30px;
+}
+
+.portfolio .text-category {
+    margin-top: 20px;
+    display: block;
+}
+
+.portfolio:hover .label {
+    bottom: 0;
+}
+
+
+/* .portfolio:hover img {
+    top: -10px;
+} */
+
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+    #portfoliolist .portfolio {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+
+/* #Clearing */
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+
+/* 
+#portfolio-section .container,
+#portfolio-section .col-sm-4 {
+    overflow: hidden;
+    padding: 0;
+}
+
+#portfolio-section .folio-item {
+    position: relative;
+    padding: 10px;
+}
+
+#portfolio-section .overlay {
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    height: 0;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay .overlay-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay .overlay-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.overlay .folio-info {
+    opacity: 0;
+    margin-bottom: 75px;
+    margin-top: -75px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h3 {
+    margin-top: 0;
+}
+
+.folio-overview a {
+    font-size: 18px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.folio-overview .folio-expand {
+    margin-top: -500px;
+    margin-left: -500px;
+}
+
+.folio-image,
+.folio-overview .folio-expand {
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+#portfolio-section .folio-item:hover .folio-image {
+    -webkit-transform: scale(1.5) rotate(-15deg);
+    -moz-transform: scale(1.5) rotate(-15deg);
+    transform: scale(1.5) rotate(-15deg);
+}
+
+.folio-image img {
+    width: 100%;
+    padding: 5px;
+}
+
+#portfolio-section .folio-item:hover .overlay {
+    opacity: 0.8;
+    bottom: 0;
+    height: 100%;
+}
+
+#portfolio-section .folio-item:hover .folio-overview .folio-expand {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.folio-overview .folio-expand:hover .fa-search-plus,
+.folio-overview .folio-link:hover .fa-link {
+    color: #000;
+}
+
+#portfolio-section .folio-item:hover .overlay .folio-info {
+    opacity: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#single-portfolio {
+    padding: 90px 0;
+    position: relative;
+}
+
+#single-portfolio img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#single-portfolio .close-folio-item {
+    position: absolute;
+    top: 30px;
+    font-size: 34px;
+    width: 34px;
+    height: 34px;
+    left: 50%;
+    margin-left: -17px;
+} */
