@@ -10,7 +10,7 @@ Index of W3-App:
 
 body {
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 450px;
+    margin-bottom: 370px;
     background-color: #202020;
 }
 
@@ -80,7 +80,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 999999;
-} */
+}
 
 .nav-wrapper ul li {
     position: relative;
@@ -149,6 +149,11 @@ nav {
         color: #202020;
     }
 }
+*/
+
+.nav-wrapper {
+    background-color: skyblue;
+}
 
 
 /* ----------- Header --------------- */
@@ -187,6 +192,10 @@ header .message .main {
     margin-left: 15%;
 }
 
+header .message h1 {
+    font-size: 2vw;
+}
+
 header .message .website,
 header .message .webapp,
 header .message .mobileapp,
@@ -198,9 +207,6 @@ header .message .tseo {
 }
 
 @media (max-width: 767px) {
-    header .message h1 {
-        font-size: 1em;
-    }
     header .message .website,
     header .message .webapp,
     header .message .mobileapp,
@@ -307,7 +313,7 @@ header .more-arrow:hover {
     height: auto;
 }
 
-.service .s12 {
+.service .service-content .s12 {
     margin-top: 80px;
 }
 
@@ -376,6 +382,10 @@ header .more-arrow:hover {
 .service .service-section p {
     color: #202020;
     text-align: center;
+}
+
+.service .service-section h4 {
+    font-size: 2vw;
 }
 
 
@@ -528,6 +538,14 @@ header .more-arrow:hover {
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
+}
+
+.our-team h5 {
+    font-size: 1.5vw;
+}
+
+.our-team h3 {
+    font-size: 2vw;
 }
 
 

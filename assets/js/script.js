@@ -36,4 +36,6 @@ $(document).ready(function() {
         }
         lastScroll = scroll;
     });
+
+    $(".button-collapse").sideNav();
 });
